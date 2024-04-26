@@ -34,7 +34,7 @@ namespace ConvertNumericToWords.Service
                 string decimalNumberWords = "";
 
                 long wholeNumber = (long)Math.Truncate(numericValue);
-                int decimalNumber = (int)(Math.Round((numericValue - wholeNumber),2) * 100);
+                long decimalNumber = (long)(Math.Round((numericValue - wholeNumber),2) * 100);
 
                 if (wholeNumber == 0 && decimalNumber == 0)
                 {
@@ -171,7 +171,7 @@ namespace ConvertNumericToWords.Service
             return chunkWords;
         }
 
-        private static string ConvertDecimalToWords(int number)
+        private static string ConvertDecimalToWords(long number)
         {
             if (number == 0)
             {
