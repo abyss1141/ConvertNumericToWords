@@ -10,7 +10,7 @@ namespace ConvertNumericToWords.Test
         [InlineData(0, "ZERO DOLLARS")]
         [InlineData(123, "ONE HUNDRED TWENTY- THREE DOLLARS")]
         [InlineData(1000, "ONE THOUSAND DOLLARS")]
-        [InlineData(123124.12, "ONE HUNDRED TWENTY- THREE THOUSAND ONE HUNDRED TWENTY- FOUR DOLLARS AND TWELVE CENTS")]
+        [InlineData(123124.13, "ONE HUNDRED TWENTY- THREE THOUSAND ONE HUNDRED TWENTY- FOUR DOLLARS AND TWELVE CENTS")]
         public void ConvertNumericToWord_ValidInput_ReturnsExpectedResult(double input, string expectedResult)
         {
             // Arrange
